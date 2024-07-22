@@ -58,3 +58,19 @@ console.log(ageJonas <= ageSarah);
 console.log(ageSarah >= 18);
 console.log(ageSarah === ageJonas);
 const isFullAge = ageSarah >= 18;
+
+let z, y;
+
+let markWeight = 78,
+  heightMark = 1.69;
+let johnWeight = 92,
+  heightJohn = 1.95;
+
+const markBmi = markWeight / heightMark ** 2;
+const johnBmi = johnWeight / heightJohn ** 2;
+
+console.log("Mark BMI", markBmi);
+console.log("John BMI", johnBmi);
+
+const markHigherBMI = markBmi > johnBmi;
+console.log(markHigherBMI);
