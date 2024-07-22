@@ -32,3 +32,7 @@ isMaried = 1;
 console.log(isMaried);
 isMaried = false;
 console.log(typeof isMaried);
+
+const birthDay = "Monday";
+// birthDay = "Tuesday"; NOT ALLOWED
+// const birthYear; NOT ALLOWED
