@@ -74,3 +74,13 @@ console.log("John BMI", johnBmi);
 
 const markHigherBMI = markBmi > johnBmi;
 console.log(markHigherBMI);
+
+// STRINGS AND TEMPLATES LITTERALS
+const jonas = `I'm Jonas a ${ageJonas - ageSarah} old teacher`;
+console.log(jonas);
+
+console.log(`Just a regular string`);
+
+console.log(`This is
+a multilines
+string`);
