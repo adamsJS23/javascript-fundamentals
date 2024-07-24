@@ -119,3 +119,27 @@ console.log("ret" / "2"); //NaN
 console.log(2 + 3 + 4 + "5"); //95
 console.log(2 + 2 + 5 + "4" + "5"); //945
 console.log("10" - "4" - "3" - 2 + "5"); //15
+
+// FALSY AND THUTHY VALUES
+
+// 5 falsy values 0,'',null,undefined,NaN
+
+console.log(Number(12));
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean("Adam"), "Adam");
+console.log(Boolean({}), "Object");
+console.log(Boolean(null));
+console.log(Boolean(undefined));
+console.log(Boolean(NaN));
+
+const money = 0;
+if (money) {
+  console.log(`You have ${money}, dont spent it all`);
+} else console.log(`You should get a job`);
+
+let height = 0;
+if (height || height === 0) console.log("heigh is defined");
+else {
+  console.log("Height is not defined");
+}
