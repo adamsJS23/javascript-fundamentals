@@ -61,20 +61,6 @@ const isFullAge = ageSarah >= 18;
 
 let z, y;
 
-let markWeight = 78,
-  heightMark = 1.69;
-let johnWeight = 92,
-  heightJohn = 1.95;
-
-const markBmi = markWeight / heightMark ** 2;
-const johnBmi = johnWeight / heightJohn ** 2;
-
-console.log("Mark BMI", markBmi);
-console.log("John BMI", johnBmi);
-
-const markHigherBMI = markBmi > johnBmi;
-console.log(markHigherBMI);
-
 // STRINGS AND TEMPLATES LITTERALS
 const jonas = `I'm Jonas a ${ageJonas - ageSarah} old teacher`;
 console.log(jonas);
@@ -98,3 +84,21 @@ if (ageStudent >= 18) {
     }`
   );
 }
+
+let markWeight = 78,
+  heightMark = 1.69;
+let johnWeight = 92,
+  heightJohn = 1.95;
+
+const markBmi = markWeight / heightMark ** 2;
+const johnBmi = johnWeight / heightJohn ** 2;
+
+console.log("Mark BMI", markBmi);
+console.log("John BMI", johnBmi);
+
+const markHigherBMI = markBmi > johnBmi;
+console.log(markHigherBMI);
+
+if (markBmi > johnBmi)
+  console.log(`Mark BMI (${markBmi}) is higher than john BMI (${johnBmi})`);
+else console.log(`John BMI (${johnBmi}) is higher than Mark BMI (${markBmi})`);
