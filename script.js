@@ -102,3 +102,20 @@ console.log(markHigherBMI);
 if (markBmi > johnBmi)
   console.log(`Mark BMI (${markBmi}) is higher than john BMI (${johnBmi})`);
 else console.log(`John BMI (${johnBmi}) is higher than Mark BMI (${markBmi})`);
+
+// CONVERSION AND COERSION
+
+const inputYear = "1991";
+console.log(inputYear + 18); // 199118
+console.log(Number(inputYear) + 18); //2009
+
+console.log(Number("Adam")); // Number
+console.log(typeof NaN);
+
+console.log("23" - "10" - 3); //10
+console.log(23 + "1"); // 231
+console.log("23" / "2"); //11.5
+console.log("ret" / "2"); //NaN
+console.log(2 + 3 + 4 + "5"); //95
+console.log(2 + 2 + 5 + "4" + "5"); //945
+console.log("10" - "4" - "3" - 2 + "5"); //15
