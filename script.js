@@ -153,12 +153,23 @@ if (currentAge === 18) console.log("You just become an adult");
 // LOOSE EQUALITY OPERATOR
 if (currentAge == 18) console.log("You just become an adult");
 
-const favourite = +prompt("What your favourite number");
+// const favourite = +prompt("What your favourite number");
 
-console.log(typeof favourite);
-if (favourite === 23) console.log("COOL! 23 is an amazing number");
-else if (favourite === 7) console.log("7 is also a good number");
-else if (favourite === 9) console.log("9 is also a good number");
-else console.log("Your number is not 23 or 7 or 9");
+// console.log(typeof favourite);
+// if (favourite === 23) console.log("COOL! 23 is an amazing number");
+// else if (favourite === 7) console.log("7 is also a good number");
+// else if (favourite === 9) console.log("9 is also a good number");
+// else console.log("Your number is not 23 or 7 or 9");
 
-if (favourite !== 23) console.log("Why not 23");
+// if (favourite !== 23) console.log("Why not 23");
+
+// CHALLENGE #13
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKolas = (88 + 91 + 110) / 3;
+const scoreDolphins = (96 + 1 + 89) / 3;
+const scoreKolas = (88 + 91 + 110) / 3;
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKolas = (96 + 108 + 89) / 3;
+if (scoreDolphins > scoreKolas) console.log("Dolphins win");
+else if (scoreDolphins < scoreKolas) console.log("Koalas Win");
+else console.log("Both Win");
