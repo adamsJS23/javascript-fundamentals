@@ -84,3 +84,17 @@ console.log(`Just a regular string`);
 console.log(`This is
 a multilines
 string`);
+
+const ageStudent = 17;
+const isOldEnough = ageStudent >= 18;
+console.log(isOldEnough);
+if (ageStudent >= 18) {
+  console.log("Sarah can start driving license 👍");
+} else {
+  const yearLeft = 18 - ageStudent;
+  console.log(
+    `Sarah can't start driving license 👎, she need to wait ${yearLeft} ${
+      yearLeft === 1 ? "year" : "years"
+    }`
+  );
+}
