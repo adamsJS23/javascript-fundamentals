@@ -143,3 +143,22 @@ if (height || height === 0) console.log("heigh is defined");
 else {
   console.log("Height is not defined");
 }
+
+// EQUALITY OPERATORS
+
+// STRICT EQUALITY OPERATOR
+let currentAge = "18";
+if (currentAge === 18) console.log("You just become an adult");
+
+// LOOSE EQUALITY OPERATOR
+if (currentAge == 18) console.log("You just become an adult");
+
+const favourite = +prompt("What your favourite number");
+
+console.log(typeof favourite);
+if (favourite === 23) console.log("COOL! 23 is an amazing number");
+else if (favourite === 7) console.log("7 is also a good number");
+else if (favourite === 9) console.log("9 is also a good number");
+else console.log("Your number is not 23 or 7 or 9");
+
+if (favourite !== 23) console.log("Why not 23");
