@@ -242,3 +242,17 @@ function fruitProcessor(apples, oranges) {
 const appleJuice = fruitProcessor(5, 0);
 console.log(appleJuice);
 console.log(fruitProcessor(5, 4));
+
+// FUNCTION DECLARATION
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+const age1 = calcAge1(1991);
+console.log(age1);
+
+// FUNCTION EXPRESSION
+const calcage2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+const age2 = calcage2(1991);
+console.log(age2);
