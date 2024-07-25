@@ -234,15 +234,6 @@
 // );
 "use strict";
 
-function fruitProcessor(apples, oranges) {
-  const juice = `Juice with ${apples} apples and ${oranges} oranges`;
-  return juice;
-}
-
-const appleJuice = fruitProcessor(5, 0);
-console.log(appleJuice);
-console.log(fruitProcessor(5, 4));
-
 // FUNCTION DECLARATION
 function calcAge1(birthYear) {
   return 2037 - birthYear;
@@ -272,3 +263,19 @@ const yearUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearUntilRetirement(1991, "Adam"));
 console.log(yearUntilRetirement(2001, "Bob"));
+
+function cutFruitPieces(fruitName, fruitNumber) {
+  console.log(`${fruitName} was cut in ${fruitNumber * 4}`);
+  return fruitNumber * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces("Apples", apples);
+  const orangePieces = cutFruitPieces("Oranges", oranges);
+  const juice = `Juice with ${apples} apples and ${oranges} oranges`;
+  return juice;
+}
+
+const appleJuice = fruitProcessor(5, 0);
+console.log(appleJuice);
+console.log(fruitProcessor(5, 4));
