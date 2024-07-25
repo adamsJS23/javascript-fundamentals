@@ -207,3 +207,16 @@ switch (day) {
   default:
     console.log("Not a valid day valid day");
 }
+
+// TERNARY OPERATOR
+console.log("TERNARY OPERATOR");
+
+const ageAdult = 18;
+ageAdult >= 18
+  ? console.log("I like to drink wine")
+  : console.log("I like to drink water");
+
+const drink = ageAdult >= 18 ? "Wine" : "Water";
+console.log(drink);
+
+console.log(`I like to drink ${ageAdult >= 18 ? "Wine" : "Water"}`);
