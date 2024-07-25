@@ -220,3 +220,15 @@ const drink = ageAdult >= 18 ? "Wine" : "Water";
 console.log(drink);
 
 console.log(`I like to drink ${ageAdult >= 18 ? "Wine" : "Water"}`);
+
+// CHALLENGE #14
+console.log("CHALLENGE #14");
+
+const bill = 275;
+// const bill=430;
+// const bill = 40;
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(
+  `The bill was ${bill}, tip was ${tip}, and the total value ${bill + tip}`
+);
