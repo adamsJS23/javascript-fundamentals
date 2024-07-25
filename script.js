@@ -182,3 +182,28 @@ else if (
 )
   console.log("Both Win the trophy 🍹");
 else console.log("No one win the the trophy");
+
+// SWITCH STATEMENT
+console.log("SWITCH STATEMENT");
+const day = "monday";
+
+switch (day) {
+  case "monday":
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend");
+    break;
+  default:
+    console.log("Not a valid day valid day");
+}
