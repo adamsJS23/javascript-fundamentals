@@ -18,6 +18,7 @@ let lastName = "Guebre";
 const PI = 3.141516;
 
 // PRIMITIVE DATA TYPE
+// number, string, boolean, undefined, null, NaN, symbol.
 let job = "Adama";
 let age = 28;
 let isMaried = true;
@@ -170,6 +171,14 @@ const scoreDolphins = (96 + 1 + 89) / 3;
 const scoreKolas = (88 + 91 + 110) / 3;
 // const scoreDolphins = (96 + 108 + 89) / 3;
 // const scoreKolas = (96 + 108 + 89) / 3;
-if (scoreDolphins > scoreKolas) console.log("Dolphins win");
-else if (scoreDolphins < scoreKolas) console.log("Koalas Win");
-else console.log("Both Win");
+if (scoreDolphins > scoreKolas && scoreDolphins > 100)
+  console.log("Dolphins win the trophy 🍹");
+else if (scoreDolphins < scoreKolas && scoreKolas > 100)
+  console.log("Koalas Win the trophy 🍹");
+else if (
+  scoreDolphins === scoreKolas &&
+  scoreDolphins >= 100 &&
+  scoreKolas >= 100
+)
+  console.log("Both Win the trophy 🍹");
+else console.log("No one win the the trophy");
