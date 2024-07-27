@@ -307,3 +307,41 @@ function checkWinner(avgDolphins, avgKoalas) {
 }
 
 checkWinner(scoreDolphins, scoreKoalas);
+
+// ARRAYS
+const friends = ["Ben", "Kalle", "Adam", "Issouf", "Mihaio"];
+const newFriends = new Array("Souley", "Mohori", "Sam", "Burth");
+console.log(friends);
+console.log(newFriends);
+
+console.log(friends[friends.length - 1]);
+
+friends.push("Jean");
+console.log(friends);
+console.log(friends.at(0));
+newFriends[2] = "Joao";
+newFriends.pop();
+newFriends.unshift("Harry");
+console.log(newFriends);
+const firstName = "Adam";
+const data = [
+  "Guebre",
+  firstName,
+  2007 - 990,
+  {},
+  friends,
+  newFriends,
+  [1, 2, 3],
+];
+
+console.log(data);
+
+function calcAge(arr) {
+  const newYear = [];
+  arr.forEach((year) => newYear.push(2037 - year));
+  return newYear;
+}
+
+const years = [1990, 1967, 2010, 2018];
+
+console.log(calcAge(years));
