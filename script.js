@@ -428,9 +428,12 @@ const adamArray = [
 const adamObject = {
   firstName: "Adam",
   lastName: "Guebre",
-  age: 2037 - 1991,
+  birthYear: 1991,
   job: "teacher",
   friends: ["Teach", "Hornt", "Burt", "Rone"],
+  calcAge: function () {
+    return (this.age = 2037 - this.birthYear);
+  },
 };
 
 console.log(adamObject);
@@ -462,3 +465,23 @@ console.log(adamObject);
 console.log(
   `${adamObject["firstName"]} has ${adamObject.friends.length} friends and his best friend is called ${adamObject.friends[0]}`
 );
+
+// OBJECT METHODS
+console.log(adamObject.calcAge());
+console.log(adamObject);
+
+// Challenge
+// 'Adam is a 46-year old Webdev, and he has a/no driver license
+
+adamObject.job = "Webdev";
+adamObject.hasDriveLicense = true;
+
+adamObject.getSummary = function () {
+  console.log(
+    `${this.firstName} is ${this.calcAge()} years old ${this.job} and he has ${
+      this.hasDriveLicense ? "a" : "no"
+    } driving license`
+  );
+};
+console.log(adamObject);
+adamObject.getSummary();
