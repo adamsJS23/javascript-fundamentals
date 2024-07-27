@@ -323,7 +323,7 @@ newFriends[2] = "Joao";
 newFriends.pop();
 newFriends.unshift("Harry");
 console.log(newFriends);
-const firstName = "Adam";
+let firstName = "Adam";
 const data = [
   "Guebre",
   firstName,
@@ -429,8 +429,36 @@ const adamObject = {
   firstName: "Adam",
   lastName: "Guebre",
   age: 2037 - 1991,
-  professione: "teacher",
-  friends: ["teacher", "Hornt", "Burt", "Rone"],
+  job: "teacher",
+  friends: ["Teach", "Hornt", "Burt", "Rone"],
 };
 
 console.log(adamObject);
+firstName = "firstName";
+console.log(adamObject.firstName);
+console.log(adamObject["lastName"]);
+console.log(adamObject[firstName]);
+
+const nameKey = "Name";
+
+console.log(adamObject["last" + nameKey]);
+
+// const interestedIn = prompt(
+//   "What do want to know about Adam? Choose betwwen firstName, lastName, age, job and friends"
+// );
+const interestedIn = "job";
+
+if (adamObject[interestedIn]) console.log(adamObject[interestedIn]);
+else console.log("Wrong request");
+
+adamObject.location = "Rotterdam";
+adamObject["employeur"] = "SIF";
+console.log(adamObject);
+
+// Challenge
+
+// 'Adam has 3 friends, and his best firend is called '
+
+console.log(
+  `${adamObject["firstName"]} has ${adamObject.friends.length} friends and his best friend is called ${adamObject.friends[0]}`
+);
