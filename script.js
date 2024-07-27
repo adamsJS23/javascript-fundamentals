@@ -419,10 +419,17 @@ const adamArray = [
   "Adam",
   "Guebre",
   2037 - 1990,
-  "teacher",
-  "Hornt",
-  "Burt",
-  "Rone",
+  true,
+  undefined,
+  NaN,
+  null,
+  Symbol,
+  "",
+  ["teacher", "Hornt", "Burt", "Rone"],
+  ["Teach", "Hornt", "Burt", "Rone"],
+  function calcAge() {
+    return (this.age = 2037 - this.birthYear);
+  },
 ];
 
 const adamObject = {
@@ -521,3 +528,36 @@ else
   console.log(
     `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`
   );
+
+// LOOPS
+
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition n° ${rep}`);
+}
+const types = new Array();
+for (let i = 0; i < adamArray.length; i++) {
+  console.log(adamArray[i], typeof adamArray[i]);
+  // types[i] = typeof adamArray[i];
+  types.unshift(typeof adamArray[i]);
+}
+
+console.log(types);
+console.log(years);
+const ages = new Array();
+for (let i = 0; i < years.length; i++) {
+  ages.unshift(2037 - years[i]);
+}
+
+console.log(ages);
+
+for (let i = 0; i < adamArray.length; i++) {
+  if (typeof adamArray[i] !== "string") continue;
+  console.log(adamArray[i], typeof adamArray[i]);
+}
+
+for (let i = 0; i < adamArray.length; i++) {
+  if (typeof adamArray[i] === "number") break;
+  console.log(adamArray[i], typeof adamArray[i]);
+}
+
+console.log(adamArray);
