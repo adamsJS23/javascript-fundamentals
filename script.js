@@ -561,3 +561,8 @@ for (let i = 0; i < adamArray.length; i++) {
 }
 
 console.log(adamArray);
+console.log("LOOPING BACKWARD");
+
+for (let i = adamArray.length - 1; i >= 0; i--) {
+  console.log(adamArray[i]);
+}
