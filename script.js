@@ -580,3 +580,35 @@ while (dice !== 6) {
   dice = Math.trunc(Math.random() * 6 + 1);
   if (dice === 6) console.log("The loop is about to end.....");
 }
+
+// CHALLENGE #2.4
+console.log("CHALLENGE #2.4");
+
+const newBills = new Array(22, 295, 176, 440, 37, 105, 10, 1100, 86, 52);
+const newTips = new Array();
+const newTotals = new Array();
+
+for (let i = 0; i < newBills.length; i++) {
+  const tip = calcTip(newBills[i]);
+  newTips.push(tip);
+  newTotals.push(newBills[i] + tip);
+}
+
+calcTip(newBills);
+console.log("New bills array", newBills);
+console.log("New tips array", newTips);
+console.log("New totals array", newTotals);
+
+const newCalcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
+
+const newTotal = new Array(22, 295, 176, 440, 37, 105, 10, 1100, 86, 52);
+console.log(newTotal);
+console.log(newCalcAverage(newTotal));
+console.log(newCalcAverage([7, 2, 3]));
+console.log(newCalcAverage([5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5]));
