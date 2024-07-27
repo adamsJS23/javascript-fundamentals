@@ -566,3 +566,17 @@ console.log("LOOPING BACKWARD");
 for (let i = adamArray.length - 1; i >= 0; i--) {
   console.log(adamArray[i]);
 }
+
+// WHILE LOOP
+let rep = 1;
+while (rep <= 10) {
+  console.log(`Lifting weights repetition n° ${rep}`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6 + 1);
+while (dice !== 6) {
+  console.log(dice);
+  dice = Math.trunc(Math.random() * 6 + 1);
+  if (dice === 6) console.log("The loop is about to end.....");
+}
