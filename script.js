@@ -412,3 +412,25 @@ const totals = new Array(
 );
 
 console.log("Bill + tip array", totals);
+
+// OBJECT
+
+const adamArray = [
+  "Adam",
+  "Guebre",
+  2037 - 1990,
+  "teacher",
+  "Hornt",
+  "Burt",
+  "Rone",
+];
+
+const adamObject = {
+  firstName: "Adam",
+  lastName: "Guebre",
+  age: 2037 - 1991,
+  professione: "teacher",
+  friends: ["teacher", "Hornt", "Burt", "Rone"],
+};
+
+console.log(adamObject);
