@@ -345,3 +345,44 @@ function calcAge(arr) {
 const years = [1990, 1967, 2010, 2018];
 
 console.log(calcAge(years));
+
+// PUSH METHOD add new elemt at the end
+let newLenght = years.push(2007);
+console.log("Push method return the new lenght of the array", newLenght);
+console.log(years);
+
+// UNSHIFT METHOD add new element in the begining
+newLenght = years.unshift(2000);
+console.log("Unshift method reutn also the new frend of the array", newLenght);
+
+// POP METHOD remove the last elemt of the array
+
+let deleted = years.pop();
+console.log(deleted);
+
+// SHIFT METOD remove the first element of the array
+
+deleted = years.shift();
+console.log(deleted);
+console.log(years);
+
+// INDEXOF
+
+let index = years.indexOf(2010);
+console.log(index);
+index = years.indexOf(1999);
+console.log(index);
+
+// INCLUDEs
+
+index = years.includes(2010);
+console.log(index);
+index = years.includes(2011);
+console.log(index);
+
+if (years.includes(2010)) console.log("You choose the right year");
+else console.log("Invalid year");
+
+years.includes(1999)
+  ? console.log("You choose the right year")
+  : console.log("Invalid year");
