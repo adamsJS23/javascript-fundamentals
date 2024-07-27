@@ -279,3 +279,31 @@ function fruitProcessor(apples, oranges) {
 const appleJuice = fruitProcessor(5, 0);
 console.log(appleJuice);
 console.log(fruitProcessor(5, 4));
+
+// CHALLENGE #2.1
+
+// TEST DATA 1: Dolphins scored 44, 23, and 71. Koalas scored 65, 54, and 49.
+// TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.
+console.log("CHALLENGE #2.1");
+// 1
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+// 2
+// const scoreDolphins = calcAverage(44, 23, 71);
+// const scoreKoalas = calcAverage(65, 54, 49);
+const scoreDolphins = calcAverage(85, 54, 41);
+const scoreKoalas = calcAverage(23, 34, 27);
+
+// 3
+
+function checkWinner(avgDolphins, avgKoalas) {
+  let winner;
+  if (avgDolphins >= avgKoalas * 2)
+    console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+  else if (avgKoalas >= avgDolphins * 2)
+    console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+  else console.log("No team wins");
+  winner = "Both teams";
+  return winner;
+}
+
+checkWinner(scoreDolphins, scoreKoalas);
